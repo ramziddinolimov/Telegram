@@ -1,0 +1,42 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ 
+ *::-webkit-scrollbar {
+    width: 0.2rem;
+ }
+  
+ *::-webkit-scrollbar-track {
+    background: #f1f1f1;
+ }
+  
+ *::-webkit-scrollbar-thumb {
+    background: #888;
+ }
+  
+ *::-webkit-scrollbar-thumb:hover {
+    background: #555;
+ }
+ 
+ @font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/OpenSans-Regular.woff2') format('woff2'),
+        url('../fonts/OpenSans-Regular.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+ }
+ 
+ body {
+    font-family: 'OpenSans';
+ }
+ 
+ ul {
+    list-style: none;
+ }
+ 
+ a {
+    text-decoration: none;
+ }

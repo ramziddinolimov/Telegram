@@ -56,6 +56,76 @@
 }
 
 .left__app{
-   width: 300px;
+   width: 400px;
+   height: 100vh;
+   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.left__app__header{
+   padding: 10px;
+   display: flex;
+   width: 100%;
+}
+
+.hamburger__button {
+   width: 20px;
+   border: none;
+   outline: none;
+   background-color: transparent;
+   transition: .3s;
+   cursor: pointer;
+}
+
+.hamburger__image {
+   width: 100%;
+}
+
+.search__input {
+   padding: 10px 15px;
+   margin-left: 10px;
+   width: calc(100% / 1);
+   background-color: #F1F1F1;
+   outline: none;   
+   border-radius: 5px;
+   font-size: 16px;
+}
+
+.border-input {
+   border: 1px solid rgb(30, 176, 202);
+}
+
+.search__input::placeholder {
+   font-size: 13px;
+}
+
+.chats{
+   height: calc(100vh - 70px);
+   overflow-y: scroll;
+}
+
+.account__item{
+   display: flex;
+   align-items: center;
+   margin: 10px 0;
+   padding: 5px 10px;
+   transition: background .3s;
+   cursor: pointer;
+}
+
+.account__item:hover{
+   background-color: rgba(0, 0, 0, 0.1);
+}
+
+.account__image{
+   border-radius: 50%;
+   width: 55px;
+}
+
+.account__text{
+   margin-left: 15px;
+}
+
+.account__name{
+   font-size: 1rem;
+   font-weight: 500;
+}

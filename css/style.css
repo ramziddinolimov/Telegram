@@ -61,6 +61,32 @@
    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.menu {
+   background-color: white;
+   position: absolute;
+   width: 300px;
+   height: 100vh;
+   left: 0;
+   top: 0;
+   z-index: 3;
+   box-shadow: 0 0 20px 0 rgba(0,0,0,0.1);
+   transform: translateX(-100%);
+   transition: .5s;
+}
+
+.menu__header{
+   background-image: url("/images/can-you-hire-a-hacker-ods.jpg");
+   height: 150px;
+   background-size: cover;
+   padding: 25px;
+}
+
+.menu__header__image{
+   width: 50px;
+   border-radius: 50%;
+   margin-bottom: 20px;
+}
+
 .left__app__header{
    padding: 10px;
    display: flex;

@@ -7,10 +7,10 @@ const shadowELement = document.querySelector(".shadow")
 
 
 
-leftArrowButton.addEventListener("click", () => {
-    rightAppMain.classList.add("chat-hidden")
-    shadowELement.classList.add("shadowHidden")
- })
+// leftArrowButton.addEventListener("click", () => {
+//     rightAppMain.classList.add("chat-hidden")
+//     shadowELement.classList.add("shadowHidden")
+//  })
  
  shadowELement.addEventListener("click", (evt) => {
     menuElement.classList.add("hidden")

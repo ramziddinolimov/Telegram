@@ -64,7 +64,7 @@
 .menu {
    background-color: white;
    position: absolute;
-   width: 300px;
+   width: 350px;
    height: 100vh;
    left: 0;
    top: 0;
@@ -173,4 +173,24 @@
    margin-right: 10px;
    margin-top: 10px;
    font-size: 0.9rem;
+}
+
+
+.right_app {
+   width: calc(100vw - 300px);
+   height: 100vh;
+   position: relative;
+}
+
+.shadow {
+   position: absolute;
+   background-color: rgba(0,0,0,0.5);
+   width: 99.9%;
+   height: 99.9%;
+   z-index: 2;
+   transition: .3s;
+}
+
+.shadowHidden {
+   display: none;
 }

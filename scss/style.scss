@@ -103,10 +103,80 @@ a {
                     margin-left: 10px;
                     font-size: 14px;
                 }
+                .night {
+                    display: flex;
+                    align-items: center;
+                }
+                .mode {
+                    background-color: rgba(0, 0, 0, 0.1);
+                    width: 35px;
+                    height: 20px;
+                    border-radius: 40px;
+                    margin-right: 20px;
+                }
+                .mode__button {
+                    background-color: white;
+                    border-radius: 50%;
+                    width: 20px;
+                    height: 20px;
+                    border: none;
+                    outline: none;
+                    transition: .3s;
+                }
+                .mode__button:focus {
+                    transform: translateX(80%);
+                    background-color: skyblue;
+                }
             }
             .main__item :hover {
                 background-color: rgba(0, 0, 0, 0.1);
             }
+            .main__item:last-child {
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+    .shadow {
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 99.9%;
+        height: 99.9%;
+        z-index: 2;
+        transition: .3s;
+    }
+    .shadowHidden {
+        display: none;
+    }
+}
+
+.left {
+    .left__app__header {
+        padding: 10px;
+        display: flex;
+        width: 100%;
+        .hamburger__button {
+            width: 20px;
+            border: none;
+            outline: none;
+            background-color: transparent;
+            transition: .3s;
+            cursor: pointer;
+            .hamburger__image {
+                width: 100%;
+            }
+        }
+        .search__input {
+            padding: 10px 15px;
+            margin-left: 10px;
+            width: calc(100% /1);
+            background-color: #f1f1f1;
+            outline: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .border-input {
+            border: 1px solid rgb(30, 176, 202);
         }
     }
 }

@@ -124,7 +124,100 @@ a {
   font-size: 14px;
 }
 
+.left__app .menu__main .main__list .main__item .night {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.left__app .menu__main .main__list .main__item .mode {
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 35px;
+  height: 20px;
+  border-radius: 40px;
+  margin-right: 20px;
+}
+
+.left__app .menu__main .main__list .main__item .mode__button {
+  background-color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  border: none;
+  outline: none;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.left__app .menu__main .main__list .main__item .mode__button:focus {
+  -webkit-transform: translateX(80%);
+          transform: translateX(80%);
+  background-color: skyblue;
+}
+
 .left__app .menu__main .main__list .main__item :hover {
   background-color: rgba(0, 0, 0, 0.1);
+}
+
+.left__app .menu__main .main__list .main__item:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.left__app .shadow {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 99.9%;
+  height: 99.9%;
+  z-index: 2;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.left__app .shadowHidden {
+  display: none;
+}
+
+.left .left__app__header {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.left .left__app__header .hamburger__button {
+  width: 20px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  -webkit-transition: .3s;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.left .left__app__header .hamburger__button .hamburger__image {
+  width: 100%;
+}
+
+.left .left__app__header .search__input {
+  padding: 10px 15px;
+  margin-left: 10px;
+  width: calc(100% /1);
+  background-color: #f1f1f1;
+  outline: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.left .left__app__header .border-input {
+  border: 1px solid #1eb0ca;
 }
 /*# sourceMappingURL=style.css.map */

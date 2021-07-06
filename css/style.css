@@ -1,186 +1,59 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
- }
- 
- *::-webkit-scrollbar {
+}
+
+*::-webkit-scrollbar {
     width: 0.2rem;
- }
-  
- *::-webkit-scrollbar-track {
+}
+
+*::-webkit-scrollbar-track {
     background: #f1f1f1;
- }
-  
- *::-webkit-scrollbar-thumb {
+}
+
+*::-webkit-scrollbar-thumb {
     background: #888;
- }
-  
- *::-webkit-scrollbar-thumb:hover {
+}
+
+*::-webkit-scrollbar-thumb:hover {
     background: #555;
- }
- 
- @font-face {
+}
+
+@font-face {
     font-family: 'OpenSans';
-    src: url('../fonts/OpenSans-Regular.woff2') format('woff2'),
-        url('../fonts/OpenSans-Regular.woff') format('woff');
+    src: url('../fonts/OpenSans-Regular.woff2') format('woff2'), url('../fonts/OpenSans-Regular.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
- }
- 
- body {
+}
+
+body {
     font-family: 'OpenSans';
- }
- 
- ul {
+}
+
+ul {
     list-style: none;
- }
- 
- a {
+}
+
+a {
     text-decoration: none;
- }
-
-
-
-
- /*  MENU SECTION  */
-
-
-
-
-
-
-.menu {
-   background-color: white;
-   position: absolute;
-   width: 350px;
-   height: 100vh;
-   left: 0;
-   top: 0;
-   z-index: 3;
-   box-shadow: 0 0 20px 0 rgba(0,0,0,0.1);
-   transform: translateX(-100%);
-   transition: .5s;
 }
 
-.menu__header{
-   background-image: url("/images/can-you-hire-a-hacker-ods.jpg");
-   height: 150px;
-   background-size: cover;
-   padding: 25px;
+.main__app .container {
+    display: flex;
+    margin: 0 auto;
 }
 
-.menu__header__image{
-   width: 50px;
-   border-radius: 50%;
-   margin-bottom: 20px;
+.left__app {
+    width: 400px;
 }
 
-.left__app__header{
-   padding: 10px;
-   display: flex;
-   width: 100%;
-}
-
-.hamburger__button {
-   width: 20px;
-   border: none;
-   outline: none;
-   background-color: transparent;
-   transition: .3s;
-   cursor: pointer;
-}
-
-.hamburger__image {
-   width: 100%;
-}
-
-.search__input {
-   padding: 10px 15px;
-   margin-left: 10px;
-   width: calc(100% / 1);
-   background-color: #F1F1F1;
-   outline: none;   
-   border-radius: 5px;
-   font-size: 16px;
-}
-
-.border-input {
-   border: 1px solid rgb(30, 176, 202);
-}
-
-.search__input::placeholder {
-   font-size: 13px;
-}
-
-.chats{
-   height: calc(100vh - 70px);
-   overflow-y: scroll;
-}
-
-.account__item{
-   display: flex;
-   align-items: center;
-   margin: 10px 0;
-   padding: 5px 10px;
-   transition: background .3s;
-   cursor: pointer;
-}
-
-.account__item:hover{
-   background-color: rgba(0, 0, 0, 0.1);
-}
-
-.account__image{
-   border-radius: 50%;
-   width: 55px;
-}
-
-.account__text{
-   margin-left: 15px;
-}
-
-.account__name{
-   font-size: 1,5rem;
-   font-weight: 500;
-}
-
-.account__you{
-   margin-top: 3px;
-   color: rgba(0, 0, 0, 0.6);
-   font-size: 0.9rem;
-   color: #1AB6E8;
-}
-
-.account__you span{
-   color: rgb(59, 141, 11);
-}
-
-.account__time {
-   align-self: flex-start;
-   margin-left: auto;
-   margin-right: 10px;
-   margin-top: 10px;
-   font-size: 0.9rem;
+.left__app .menu__header__image {
+    width: 30px;
 }
 
 
-.right_app {
-   width: calc(100vw - 300px);
-   height: 100vh;
-   position: relative;
-}
-
-.shadow {
-   position: absolute;
-   background-color: rgba(0,0,0,0.5);
-   width: 99.9%;
-   height: 99.9%;
-   z-index: 2;
-   transition: .3s;
-}
-
-.shadowHidden {
-   display: none;
-}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,112 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+    width: 0.2rem;
+}
+
+*::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/OpenSans-Regular.woff2') format('woff2'), url('../fonts/OpenSans-Regular.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: 'OpenSans';
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main__app {
+    .container {
+        display: flex;
+        position: relative;
+        margin: 0 auto;
+    }
+}
+
+.left__app {
+    width: 300px;
+    height: 100vh;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    .menu {
+        width: 300px;
+        height: 100vh;
+        background-color: white;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 3;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+        transform: translateX(-100%);
+        transition: .5s;
+    }
+    .menu_header {
+        height: 150px;
+        padding: 25px;
+        background-image: url("/images/can-you-hire-a-hacker-ods.jpg");
+        background-size: cover;
+        .menu__header__image {
+            width: 50px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        .menu__header__text {
+            width: 55%;
+            color: white;
+            font-size: 18px;
+            line-height: 1.2;
+            span {
+                font-size: 5px;
+            }
+        }
+    }
+    .menu__main {
+        .main__list {
+            margin-top: 20px;
+            .main__item {
+                padding: 10px;
+                padding-left: 30px;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                transition: .3s;
+                .main__image {
+                    width: 25px;
+                }
+                .main__text {
+                    margin-left: 10px;
+                    font-size: 14px;
+                }
+            }
+            .main__item :hover {
+                background-color: rgba(0, 0, 0, 0.1);
+            }
+        }
+    }
+}

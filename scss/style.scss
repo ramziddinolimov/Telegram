@@ -51,11 +51,11 @@ a {
 }
 
 .left__app {
-    width: 300px;
+    width: 370px;
     height: 100vh;
     border: 1px solid rgba(0, 0, 0, 0.1);
     .menu {
-        width: 300px;
+        width: 370px;
         height: 100vh;
         background-color: white;
         position: absolute;
@@ -66,58 +66,65 @@ a {
         transform: translateX(-100%);
         transition: .5s;
     }
-    .menu_header {
-        height: 150px;
+    .menu__header__image {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+    }
+    .menu__header {
+        height: 180px;
         padding: 25px;
-        background-image: url("/images/can-you-hire-a-hacker-ods.jpg");
-        background-size: cover;
-        .menu__header__image {
-            width: 50px;
-            border-radius: 50%;
-            margin-bottom: 20px;
-        }
+        background: linear-gradient(0.25turn, #3f87a6, #ebf8e1);
         .menu__header__text {
-            width: 55%;
-            color: white;
-            font-size: 18px;
+            width: 100%;
+            color: #180808;
+            font-size: 20px;
             line-height: 1.2;
             span {
-                font-size: 5px;
+                font-size: 15px;
             }
         }
     }
     .menu__main {
         .main__list {
             margin-top: 20px;
+            .main__item:hover {
+                background-color: rgba(0, 0, 0, 0.1);
+            }
+            .main__item:last-child {
+                display: flex;
+                align-items: center;
+            }
             .main__item {
-                padding: 10px;
+                padding: 25px;
                 padding-left: 30px;
                 display: flex;
                 align-items: center;
                 cursor: pointer;
-                transition: .3s;
+                transition: background .3s;
                 .main__image {
                     width: 25px;
                 }
                 .main__text {
                     margin-left: 10px;
-                    font-size: 14px;
+                    font-size: 18px;
                 }
                 .night {
+                    margin-right: 100px;
                     display: flex;
                     align-items: center;
                 }
                 .mode {
                     background-color: rgba(0, 0, 0, 0.1);
-                    width: 35px;
+                    width: 45px;
                     height: 20px;
-                    border-radius: 40px;
-                    margin-right: 20px;
+                    border-radius: 50px;
+                    margin-right: 25px;
                 }
                 .mode__button {
-                    background-color: white;
                     border-radius: 50%;
-                    width: 20px;
+                    width: 25px;
                     height: 20px;
                     border: none;
                     outline: none;
@@ -127,13 +134,6 @@ a {
                     transform: translateX(80%);
                     background-color: skyblue;
                 }
-            }
-            .main__item :hover {
-                background-color: rgba(0, 0, 0, 0.1);
-            }
-            .main__item:last-child {
-                display: flex;
-                align-items: center;
             }
         }
     }
@@ -175,8 +175,56 @@ a {
             border-radius: 5px;
             font-size: 16px;
         }
+        .search__input::placeholder {
+            font-size: 13px;
+        }
         .border-input {
             border: 1px solid rgb(30, 176, 202);
+        }
+    }
+    .chats {
+        height: calc(100vh - 70px);
+        overflow-y: scroll;
+        .account__list {
+            .account__item:hover {
+                background-color: rgba(0, 0, 0, 0.1);
+            }
+            .account__item {
+                display: flex;
+                align-items: center;
+                margin: 10px 0;
+                padding: 5px 10px;
+                transition: background .3s;
+                cursor: pointer;
+                .account__image {
+                    border-radius: 50%;
+                    width: 55px;
+                }
+                .account__text {
+                    margin-left: 15px;
+                    .account__name {
+                        font-size: 1rem;
+                        font-weight: 500;
+                    }
+                    .account__you {
+                        margin-top: 3px;
+                        color: rgba(0, 0, 0, 0.6);
+                        font-size: 0.9rem;
+                        color: #1AB6E8;
+                        span {
+                            color: yellowgreen;
+                            font-size: 0.9rem;
+                        }
+                    }
+                }
+                .account__time {
+                    align-self: flex-start;
+                    margin-left: auto;
+                    margin-right: 10px;
+                    margin-top: 10px;
+                    font-size: 0.9rem;
+                }
+            }
         }
     }
 }

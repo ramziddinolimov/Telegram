@@ -295,4 +295,204 @@ a {
   margin-top: 10px;
   font-size: 0.9rem;
 }
+
+.right_app {
+  width: calc(100vw - 300px);
+  height: 100vh;
+  position: relative;
+}
+
+.right_app .chat__modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-86%, -50%);
+          transform: translate(-86%, -50%);
+  width: 33%;
+  height: 95%;
+  overflow-y: scroll;
+  background-color: white;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  z-index: 4;
+}
+
+.right_app .chat__modal .info__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 25px;
+  padding-bottom: 0;
+}
+
+.right_app .chat__modal .info__header .user__info {
+  font-size: 20px;
+}
+
+.right_app .chat__modal .info__header .user__btn {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.right_app .chat__modal .info__name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+  padding: 25px;
+  padding-top: 0;
+}
+
+.right_app .chat__modal .info__name .info__name__img {
+  width: 70px;
+  border-radius: 50%;
+}
+
+.right_app .chat__modal .info__name .info__name__text {
+  margin-left: 20px;
+  font-size: 20px;
+  font-weight: 550;
+}
+
+.right_app .chat__modal .info__name .info__name__time {
+  margin-left: 20px;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.right_app .chat__modal .back {
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 8px;
+}
+
+.right_app .chat__modal .personality__list {
+  padding: 25px;
+}
+
+.right_app .chat__modal .personality__list .mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.right_app .chat__modal .personality__list .mobile .mobile__img {
+  width: 30px;
+}
+
+.right_app .chat__modal .personality__list .mobile__text {
+  margin-left: 40px;
+}
+
+.right_app .chat__modal .personality__list .mobile__text .mob {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.right_app .chat__modal .personality__list .bio {
+  margin: 20px 0;
+  margin-left: 70px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.right_app .chat__modal .personality__list .bio .bio__slog {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.right_app .chat__modal .personality__list .notific {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.right_app .chat__modal .personality__list .notific div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.right_app .chat__modal .personality__list .notific div .notific__img {
+  width: 30px;
+}
+
+.right_app .chat__modal .personality__list .notific div .notific__text {
+  margin-left: 40px;
+}
+
+.right_app .chat__modal .personality__list .notific .mode {
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 45px;
+  height: 20px;
+  border-radius: 50px;
+  margin-right: 25px;
+}
+
+.right_app .chat__modal .personality__list .notific .mode__button {
+  border-radius: 50%;
+  width: 25px;
+  height: 20px;
+  border: none;
+  outline: none;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.right_app .chat__modal .personality__list .notific .mode__button:focus {
+  -webkit-transform: translateX(80%);
+          transform: translateX(80%);
+  background-color: skyblue;
+}
+
+.right_app .chat__modal .contact__footer {
+  padding: 25px;
+  padding-bottom: 0;
+  margin-top: 15px;
+}
+
+.right_app .chat__modal .contact__footer .contact__item1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.right_app .chat__modal .contact__footer .contact__item1 p {
+  margin-left: 40px;
+}
+
+.right_app .chat__modal .contact__footer .contact__item {
+  margin: 10px 0;
+  margin-left: 65px;
+}
+
+.right_app .chat__modal .contact__footer .contact__item2 {
+  color: red;
+  margin-left: 65px;
+}
 /*# sourceMappingURL=style.css.map */

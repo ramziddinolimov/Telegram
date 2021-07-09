@@ -229,6 +229,10 @@ a {
     }
 }
 
+.chatHidden {
+    display: none;
+}
+
 .right_app {
     width: calc(100vw - 300px);
     height: 100vh;
@@ -364,6 +368,159 @@ a {
             .contact__item2 {
                 color: red;
                 margin-left: 65px;
+            }
+        }
+    }
+    .right_app__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 15px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        height: 70px;
+        .profile__section {
+            display: flex;
+            align-items: center;
+            .left-arrow_button {
+                display: none;
+                border: none;
+                outline: none;
+                background-color: transparent;
+                padding: 10px;
+                cursor: pointer;
+                .left-arrow {
+                    width: 30px;
+                }
+            }
+            .profile__modal {
+                margin-left: 10px;
+                width: 900px;
+                .profile__name {
+                    font-size: 1.3rem;
+                }
+                .profile__slog {
+                    color: rgba(0, 0, 0, 0.6);
+                }
+            }
+        }
+        .profile__image {
+            display: flex;
+            align-items: center;
+            .profile__icon__button {
+                border: none;
+                outline: none;
+                background-color: transparent;
+                padding: 0 5px;
+                cursor: pointer;
+                .profile__icon1 {
+                    width: 25px;
+                }
+                .profile__icon {
+                    width: 35px;
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+    .right_app__main {
+        background-image: url("/images/can-you-hire-a-hacker-ods.jpg");
+        background-repeat: no-repeat;
+        width: calc(80vw - 300px);
+        height: calc(100vh - 120px);
+        overflow-y: scroll;
+        display: flex;
+        flex-direction: column-reverse;
+        .message__list {
+            display: flex;
+            justify-items: flex-end;
+            flex-direction: column-reverse;
+            padding: 20px;
+            .select-box {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 75vh;
+                .select-chat {
+                    background-color: rgba(0, 0, 0, 0.5);
+                    color: white;
+                    padding: 5px 10px;
+                    border-radius: 20px;
+                }
+            }
+        }
+    }
+    .right_app__footer {
+        width: calc(80vw - 300px);
+        height: 50px;
+        position: relative;
+        .emojiListHidden {
+            display: none;
+        }
+        .emoji-list {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            width: 30%;
+            background-color: white;
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            position: absolute;
+            z-index: 5;
+            bottom: 120%;
+            right: 5%;
+            .emoji-item {
+                padding: 15px 10px;
+                cursor: pointer;
+                font-size: 20px;
+            }
+        }
+        .message__form {
+            width: 100%;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            .message__textarea {
+                outline: none;
+                min-height: 1%;
+                font-size: 17px;
+                padding: 0 10px;
+                width: 97%;
+                resize: none;
+                border: none;
+                overflow: hidden;
+            }
+            .emoji__button {
+                background-color: transparent;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                margin-right: 10px;
+                .emoji__icon__img {
+                    width: 30px;
+                }
+            }
+            .message__send__button {
+                width: 3%;
+                height: 50px;
+                border: none;
+                outline: none;
+                background-color: transparent;
+                padding-right: 10px;
+                cursor: pointer;
+                .message__send__icon {
+                    width: 100%;
+                }
+            }
+            .paper__button {
+                margin-left: 10px;
+                width: 30px;
+                border: none;
+                outline: none;
+                background-color: transparent;
+                cursor: pointer;
+                .paper-clip {
+                    width: 100%;
+                }
             }
         }
     }

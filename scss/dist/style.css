@@ -220,6 +220,10 @@ a {
   font-size: 0.9rem;
 }
 
+.chatHidden {
+  display: none;
+}
+
 .right_app {
   width: calc(100vw - 300px);
   height: 100vh;
@@ -358,4 +362,157 @@ a {
 .right_app .chat__modal .contact__footer .contact__item2 {
   color: red;
   margin-left: 65px;
+}
+.right_app .right_app__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 15px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  height: 70px;
+}
+.right_app .right_app__header .profile__section {
+  display: flex;
+  align-items: center;
+}
+.right_app .right_app__header .profile__section .left-arrow_button {
+  display: none;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 10px;
+  cursor: pointer;
+}
+.right_app .right_app__header .profile__section .left-arrow_button .left-arrow {
+  width: 30px;
+}
+.right_app .right_app__header .profile__section .profile__modal {
+  margin-left: 10px;
+  width: 900px;
+}
+.right_app .right_app__header .profile__section .profile__modal .profile__name {
+  font-size: 1.3rem;
+}
+.right_app .right_app__header .profile__section .profile__modal .profile__slog {
+  color: rgba(0, 0, 0, 0.6);
+}
+.right_app .right_app__header .profile__image {
+  display: flex;
+  align-items: center;
+}
+.right_app .right_app__header .profile__image .profile__icon__button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 0 5px;
+  cursor: pointer;
+}
+.right_app .right_app__header .profile__image .profile__icon__button .profile__icon1 {
+  width: 25px;
+}
+.right_app .right_app__header .profile__image .profile__icon__button .profile__icon {
+  width: 35px;
+  margin-left: 5px;
+}
+.right_app .right_app__main {
+  background-image: url("/images/can-you-hire-a-hacker-ods.jpg");
+  background-repeat: no-repeat;
+  width: calc(80vw - 300px);
+  height: calc(100vh - 120px);
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.right_app .right_app__main .message__list {
+  display: flex;
+  justify-items: flex-end;
+  flex-direction: column-reverse;
+  padding: 20px;
+}
+.right_app .right_app__main .message__list .select-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+}
+.right_app .right_app__main .message__list .select-box .select-chat {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+.right_app .right_app__footer {
+  width: calc(80vw - 300px);
+  height: 50px;
+  position: relative;
+}
+.right_app .right_app__footer .emojiListHidden {
+  display: none;
+}
+.right_app .right_app__footer .emoji-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 30%;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  position: absolute;
+  z-index: 5;
+  bottom: 120%;
+  right: 5%;
+}
+.right_app .right_app__footer .emoji-list .emoji-item {
+  padding: 15px 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.right_app .right_app__footer .message__form {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.right_app .right_app__footer .message__form .message__textarea {
+  outline: none;
+  min-height: 1%;
+  font-size: 17px;
+  padding: 0 10px;
+  width: 97%;
+  resize: none;
+  border: none;
+  overflow: hidden;
+}
+.right_app .right_app__footer .message__form .emoji__button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.right_app .right_app__footer .message__form .emoji__button .emoji__icon__img {
+  width: 30px;
+}
+.right_app .right_app__footer .message__form .message__send__button {
+  width: 3%;
+  height: 50px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding-right: 10px;
+  cursor: pointer;
+}
+.right_app .right_app__footer .message__form .message__send__button .message__send__icon {
+  width: 100%;
+}
+.right_app .right_app__footer .message__form .paper__button {
+  margin-left: 10px;
+  width: 30px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.right_app .right_app__footer .message__form .paper__button .paper-clip {
+  width: 100%;
 }

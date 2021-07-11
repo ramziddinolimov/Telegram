@@ -35,6 +35,8 @@ let usersListElement = document.querySelector(".account__list")
 let messagesListElement = document.querySelector(".message__list")
 let messageTextForm = document.querySelector(".message__form")
 let messagesTextInput = document.querySelector(".message__textarea")
+let emojiListHidden = document.querySelector('.emojiListHidden')
+let mainElement = document.querySelector('.right_app__main')
 
 let emojies = ["😀", "😋", "😅", "😏", "😀", "😃", "😄", "😁", "😆", "😄", "😅", "😂", "😏", "😞", "😅", "😚", "🙊", "😌", "😀", "😋", "😆", "😐", "😕", "🥶", "😱", "😨", "😰", "😥", "😓", "🤗", "🤔", "🤭", "🤫", "🤥", "😶", "😐", "😑", "😬", "🙄", "😯", "😦", "😧", "😮", "😲", "🥱", "😴", "🤤", "😪", "😵", "🤐", "🥴", "🤚", "🖐", "✋"]
 
@@ -52,6 +54,7 @@ shadowELement.addEventListener("click", (evt) => {
     settingsModalElement.classList.add("settingsHidden")
     menuElement.style.transform = "translateX(-100%)"
     chatModal.classList.add('chatHidden')
+
 })
 
 hamburgerButtonElement.addEventListener("click", evt => {
@@ -104,8 +107,152 @@ const DATA = [{
         id: 2,
         name: "Mehriddin Rajabov",
         photo: "./images/account__image2.jpg",
-        date: moment(Date.now()).startOf('day'),
+        date: moment(Date.now()).format('dddd'),
         number: "+99890 111 00 00",
+        message: [{ body: "Salom ", isMine: true }, { body: "Yaxshimisiz", isMine: false }]
+    },
+
+    {
+        id: 3,
+        name: "Bozorov Shaxzod",
+        photo: "./images/account__image3.jpg",
+        date: moment(Date.now()).format('dd'),
+        number: "+99890 222 00 00",
+        message: [{ body: "Assalomu Aleykum", isMine: true }, { body: "Bugun kelasizmi", isMine: false }]
+    },
+
+    {
+        id: 4,
+        name: "Tursunov Asadbek",
+        photo: "./images/account__image4.jpg",
+        date: moment(Date.now()).format('LT'),
+        number: "+99890 333 00 00",
+        message: [{ body: "Ertaga ishga keling", isMine: true }, { body: "Albatta boraman", isMine: false }]
+    },
+
+    {
+        id: 5,
+        name: "Shaxzod Oimov",
+        photo: "./images/account__image5.jpg",
+        date: moment(Date.now()).format('LT'),
+        number: "+99890 444 00 00",
+        message: [{ body: "Darsni qoldirmang", isMine: true }, { body: "Rahmat kattakon", isMine: false }]
+    },
+
+    {
+        id: 6,
+        name: "Shomurodov Shahruz",
+        photo: "./images/account__image3.jpg",
+        date: moment(Date.now()).format('LT'),
+        number: "+99890 555 00 00",
+        message: [{ body: "Soat 14:00 da keling", isMine: true }, { body: "Rahmat", isMine: false }]
+    },
+
+    {
+        id: 7,
+        name: "Hamroev Jamol",
+        photo: "./images/account__image2.jpg",
+        date: moment(Date.now()).format('LT'),
+        number: "+99890 666 00 00",
+        message: [{ body: "Balki borolmasman", isMine: true }, { body: "Yaxshi", isMine: false }]
+    },
+
+    {
+        id: 8,
+        name: "Joraev Keldiyor",
+        photo: "./images/account__image1.jpg",
+        date: moment(Date.now()).format('LT'),
+        number: "+99890 777 00 00",
+        message: [{ body: "Kecha qayerga ketgandiz", isMine: true }, { body: "Qaysi vaqtda", isMine: false }]
+    },
+
+    {
+        id: 9,
+        name: "Orziqov Usmon",
+        photo: "./images/account__image4.jpg",
+        date: moment(Date.now()).format('LT'),
+        number: "+99890 666 08 00",
+        message: [{ body: "I like cat", isMine: true }, { body: "Good", isMine: false }]
+    },
+
+    {
+        id: 10,
+        name: "Quvondiqov Azim",
+        photo: "./images/account__image5.jpg",
+        date: moment(Date.now()).format('LT'),
+        number: "+99890 766 00 00",
+        message: [{ body: "Hello", isMine: true }, { body: "Hello", isMine: false }]
+    },
+
+    {
+        id: 11,
+        name: "Yodgorov Jamshid",
+        photo: "./images/account__image3.jpg",
+        date: moment(Date.now()).format('LT'),
+        number: "+99890 946 00 00",
+        message: [{ body: "Do'stim bugun kelarsan", isMine: true }, { body: "Xop yaxshi", isMine: false }]
+    },
+
+    {
+        id: 12,
+        name: "Azimov Tohirbek",
+        photo: "./images/account__image2.jpg",
+        date: moment(Date.now()).format('LT'),
+        number: "+99890 886 00 00",
+        message: [{ body: "Bugun kelmang", isMine: true }, { body: "Nega", isMine: false }]
+    },
+
+    {
+        id: 13,
+        name: "Jumaev Muhammadali",
+        photo: "./images/account__image1.jpg",
+        date: moment(Date.now()).format('LT'),
+        number: "+99890 536 70 00",
+        message: [{ body: "Bugun dam olish kuni", isMine: true }, { body: "Shunaqa", isMine: false }]
+    },
+
+    {
+        id: 14,
+        name: "Jamolov Abdullo",
+        photo: "./images/account__image4.jpg",
+        date: moment(Date.now()).format('LT'),
+        number: "+99890 666 00 00",
+        message: [{ body: "Salom qalaysan", isMine: true }, { body: "Rahmat", isMine: false }]
+    },
+
+    {
+        id: 15,
+        name: "Orziev Jahongir",
+        photo: "./images/account__image5.jpg",
+        date: moment(Date.now()).format('LT'),
+        number: "+99890 486 60 50",
+        message: [{ body: "Salom qalaysan", isMine: true }, { body: "Rahmat", isMine: false }]
+    },
+
+    {
+        id: 16,
+        name: "Samandarov Suxrob",
+        photo: "./images/account__image2.jpg",
+        date: moment(Date.now()).format('LT'),
+        number: "+99890 486 78 00",
+        message: [{ body: "Salom qalaysan", isMine: true }, { body: "Rahmat", isMine: false }]
+    },
+
+    {
+        id: 17,
+        name: "Quvondiqov Qurbonali",
+        photo: "./images/account__image1.jpg",
+        date: moment(Date.now()).format('LT'),
+        number: "+99890 500 85 00",
+        message: [{ body: "Salom qalaysan", isMine: true }, { body: "Rahmat", isMine: false }]
+    },
+
+    {
+        id: 18,
+        name: "Haydarov Firdavs",
+        photo: "./images/account__image3.jpg",
+        date: moment(Date.now()).format('LT'),
+        number: "+99890 937 85 00",
         message: [{ body: "Salom qalaysan", isMine: true }, { body: "Rahmat", isMine: false }]
     },
 ]
@@ -136,9 +283,18 @@ for (let item of emojies) {
 }
 
 emojiButton.addEventListener('click', evt => {
-    emojiList.classList.toggle("emojiListHidden")
+    emojiListHidden.style.display = 'block'
     evt.preventDefault()
     messagesTextInput.focus()
+})
+
+
+emojiButton.addEventListener('dblclick', evt => {
+    emojiListHidden.style.display = 'none'
+})
+
+mainElement.addEventListener('click', evt => {
+    emojiListHidden.style.display = 'none'
 })
 
 messagesTextInput.addEventListener("keyup", event => {
@@ -191,14 +347,16 @@ function renderUsers(parentElement, data) {
         let newSpanElement = document.createElement("span")
         let newH2Element = document.createElement("h2")
         let newPElement = document.createElement("p")
+        let newSpan2lement = document.createElement("span")
         let newTimePlement = document.createElement("p")
 
         newLiElement.classList.add("account__item")
         newImgElement.classList.add("account__image")
         newSpanElement.classList.add("account__text")
         newH2Element.classList.add("account__name")
-        newPElement.classList.add("account__slog")
+        newPElement.classList.add("account__you")
         newTimePlement.classList.add("account__time")
+        newSpan2lement.classList.add("span")
 
         newImgElement.src = user.photo
         newH2Element.textContent = user.name
